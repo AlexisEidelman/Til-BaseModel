@@ -13,9 +13,6 @@ entities:
               
 
             retraite: 
-                - rsti: if(ISRETIRED, 
-                             if(BEGINER, 0.7*sali, rsti), 
-                          0)
                 # Actualisation du nombre d'enfants par régime
                 - new_born: invl_mere.count(agem==0) + invl_pere.count(agem==0) 
                 - nb_enf_RG: if(WORK_PRIVE, nb_enf + new_born, nb_enf)
@@ -30,7 +27,6 @@ entities:
                 - start_retirement: if(to_be_retired, period, start_retirement)
                 - workstate: if(to_be_retired, RETIRED, workstate) 
                 - new_rsti: pension_func(filter=to_be_retired)
-                - rsti: if(ISRETIRED, rsti*(1+0), rsti)
-                
+                - revalo: 0
                 - rsti: if(to_be_retired, new_rsti, rsti*(1+revalo))
                 - test: count(rsti>0)
