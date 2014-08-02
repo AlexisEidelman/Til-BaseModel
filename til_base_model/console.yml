@@ -23,8 +23,10 @@ import:
 
 globals:
     periodic:
-        - WEMRA: int
-        - LIMIT: float
+       path: param\globals.csv
+       fields:
+       - MINR: float
+       - WEMRA: int
 
 simulation:
     init:
