@@ -8,12 +8,12 @@ import:
     - _House/menage.yml
     - _Fiscal/declar.yml
     - _Work/work.yml
-    - _Demo/_birth//birth.yml
-    - _Demo/_birth//birth_technical.yml
+    - _Demo/_birth/birth.yml
+    - _Demo/_birth/birth_technical.yml
     - _Demo/_migration/migration.yml
-    - _Demo/_death//death.yml
-    - _Demo/_union//union.yml
-    - _Demo/_divorce//divorce.yml
+    - _Demo/_death/death.yml
+    - _Demo/_union/union.yml
+    - _Demo/_divorce/divorce.yml
     - _Educ/youth.yml
     - _House/moving.yml
     - _Consumption/conso.yml
