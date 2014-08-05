@@ -23,7 +23,7 @@ import:
 
 globals:
     periodic:
-       path: param\globals.csv
+       path: param/globals.csv
        fields:
        - MINR: float
        - WEMRA: int
